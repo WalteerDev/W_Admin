@@ -5,6 +5,8 @@ An Administration menu for FiveM server with LOGS.
 
 Don't forget to config WEBHOOK in sv_admin.lua ! 
 
+Open the menu using key ")"
+
 Enjoy ! 
 
-discord.gg/7b5VpsCxtT
+Need help ? discord.gg/7b5VpsCxtT
