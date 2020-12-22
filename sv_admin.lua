@@ -26,6 +26,7 @@ AddEventHandler("W_Administration:donnerbank", function(money)
 	TriggerClientEvent('esx:showNotification', _source, "Give : ~b~+ "..total.."$ ~s~(Banque)") 
 	xPlayer.addAccountMoney('bank', total) 
 end) 
+
 RegisterServerEvent("W_Administration:donnersale") 
 AddEventHandler("W_Administration:donnersale", function(money) 
 	local _source = source 
