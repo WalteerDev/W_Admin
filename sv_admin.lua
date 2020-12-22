@@ -2,9 +2,6 @@ ESX = nil
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
-
-print('[^2W_Admin^7] [^2Info^7] Le menu administration s\'est start correctement. N\'oubliez pas de bien configurer le WebHook discord !')
-print('[^2W_Admin^7] [^2Info^7] Besoin d\'aide ? : discord.gg/7b5VpsCxtT')
 -------------VOTRE WEBHOOK ICI----------------
 webhook = "VOTRE_WEBHOOK_ICI"
 -------------VOTRE WEBHOOK ICI----------------
@@ -74,8 +71,8 @@ RegisterServerEvent("reanimertlmd")
 AddEventHandler("reanimertlmd", function()
 	name = GetPlayerName(source)
 	local xPlayers	= ESX.GetPlayers()
-	print('^2REVIVE ALL EFFECTUE AVEC SUCCES')
-	SendWebhookMessageMenuStaff(webhook,"UN STAFF A REANIME TOUT LES JOUEURS \n```diff\nJoueurs: "..name.."\nID du Joueur : "..source.." \n[Logs By </Walteer>#0033 discord.gg/7b5VpsCxtT]```")
+	print('^2REVIVE ALL effectué avec succès.')
+	SendWebhookMessageMenuStaff(webhook,"Un staff a REANIME tous les joueurs (reviveall)\n```diff\nJoueurs: "..name.."\nID du Joueur : "..source.." \n[Logs By </Walteer>#0033 discord.gg/7b5VpsCxtT]```")
 	for i=1, #xPlayers, 1 do
 		local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
 		TriggerEvent('esx_ambulancejob:revive2', xPlayers[i])
@@ -94,7 +91,10 @@ ESX.RegisterServerCallback('W_Administration:groupdumek', function(source, cb)
 		cb(nil)
 	end
 end)  
+print('[^2W_Admin^7] [^2Info^7] Le menu administration s\'est start correctement. N\'oubliez pas de bien configurer le WebHook discord !')
+
 RegisterServerEvent('W_Administration:kickraison')
 AddEventHandler('W_Administration:kickraison', function(player, raison)
-    DropPlayer(player, "Vous avez été kick --> ".. raison)
+    DropPlayer(player, "Vous avez été kick du serveur --> ".. raison)
 end)
+print('[^2W_Admin^7] [^2Info^7] Besoin d\'aide ? : discord.gg/7b5VpsCxtT')
