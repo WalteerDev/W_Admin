@@ -1,4 +1,4 @@
-# W_Admin, Admin Menu for FiveM
+# W_Admin V1, Admin Menu for FiveM
 
 
 An Administration menu for FiveM server with LOGS.
