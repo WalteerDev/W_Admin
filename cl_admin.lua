@@ -15,15 +15,13 @@ print('[W_Admin] [Info] Copyright </Walteer>#0033, pour Equinoxe Rp V2. discord.
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
+RegisterCommand('menuadmin', function()
+    TriggerEvent('W_AdministrationMenu')
+  end, false)
+  
+RegisterKeyMapping('menuadmin', 'Menu Admin', 'keyboard', ')')
 
-Citizen.CreateThread(function()
-    while true do
-		Citizen.Wait(1)
-		if IsControlJustPressed(1,84) then
-			 TriggerEvent('W_AdministrationMenu', source)
-        end  
-	end
-end)
+
 ----------------------------------------------
 --         Ouvrir le menu :   )             --
 ----------------------------------------------
